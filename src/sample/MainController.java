@@ -4,26 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainController {
-    private static MainController instancia = null;
+
 
     public static List<String> resultadoBusqueda;
 
-    public MainController() {
 
-    }
 
-    public List<String> resultadoBusqueda() {
+    public static void Busqueda() {
         resultadoBusqueda = new ArrayList<>();
         resultadoBusqueda.add("BUSQUEDA 1");
         resultadoBusqueda.add("BUSQUEDA 2");
+
+    }
+
+    public static List<String> getResultadoBusqueda() {
         return resultadoBusqueda;
     }
 
-    public static MainController getInstance()
-    {
-        if (instancia == null)
-            instancia = new MainController();
-
-        return instancia;
+    public static void setResultadoBusqueda(List<String> resultadoBusqueda) {
+        MainController.resultadoBusqueda = resultadoBusqueda;
     }
 }

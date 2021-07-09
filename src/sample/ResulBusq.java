@@ -14,9 +14,8 @@ public class ResulBusq implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        MainController main = MainController.getInstance();
 
-        listaBusqueda.getItems().addAll(main.resultadoBusqueda());
+        listaBusqueda.getItems().addAll(MainController.resultadoBusqueda);
 
 
     }
