@@ -9,7 +9,7 @@
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onAction="#nuevoCliente" onMouseDragEntered="#nuevoCliente" onMouseDragExited="#nuevoCliente" prefHeight="25.0" prefWidth="105.0" text="Crear" />
-            <Button mnemonicParsing="false" onMouseClicked="#buscar" prefHeight="25.0" prefWidth="102.0" text="Buscar" />
+
          </children>
       </VBox>
    </right>
